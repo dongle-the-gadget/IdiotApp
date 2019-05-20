@@ -1,5 +1,5 @@
 # IdiotApp
-This app can be used as a prank. To get pass the app, you need to solve the puzzle. If you want, you can have nice easter eggs too!
+This app can be used as a prank. To get pass the app, you need to solve the puzzle. If you can and want, you can have nice easter eggs too!
 ## How to play
 When you start the app, the app gives you 5 challenges. You need to answer them. Every 2 seconds, starting from the time you answered the question, another question appears. If you finish all of them in time, you can click on "Unfuck!" to close the app or "Easter eggs" to get the easter eggs. If you are unlucky and the time ends, you need to press NO on the message box asking you to run REGFuck or not to prevent damages to your computer.
 ## Destructive level
