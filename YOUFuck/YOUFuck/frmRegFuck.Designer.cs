@@ -39,7 +39,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(800, 450);
             this.label1.TabIndex = 0;
-            this.label1.Text = "YOUR PC IS GOING TO BECOME TOAST!";
+            this.label1.Text = "YOUR PC HAS BEEN TOASTED!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmRegFuck

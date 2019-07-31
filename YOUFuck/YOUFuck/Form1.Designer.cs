@@ -55,6 +55,7 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label3 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button7 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -218,7 +219,7 @@
             this.radioButton3.AutoSize = true;
             this.radioButton3.Location = new System.Drawing.Point(15, 77);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(47, 17);
+            this.radioButton3.Size = new System.Drawing.Size(46, 17);
             this.radioButton3.TabIndex = 2;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "GRB";
@@ -230,7 +231,7 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(15, 54);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(47, 17);
+            this.radioButton2.Size = new System.Drawing.Size(46, 17);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "BGR";
@@ -242,7 +243,7 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(15, 31);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(47, 17);
+            this.radioButton1.Size = new System.Drawing.Size(46, 17);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "RGB";
@@ -281,25 +282,27 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.00062F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.00062F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.00062F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.99813F));
+            this.tableLayoutPanel1.Controls.Add(this.button7, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.resetTimeButton, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.button1, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.button2, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(495, 392);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(424, 392);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(293, 27);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(364, 27);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
             // resetTimeButton
             // 
             this.resetTimeButton.Location = new System.Drawing.Point(3, 3);
             this.resetTimeButton.Name = "resetTimeButton";
-            this.resetTimeButton.Size = new System.Drawing.Size(91, 21);
+            this.resetTimeButton.Size = new System.Drawing.Size(85, 21);
             this.resetTimeButton.TabIndex = 1;
             this.resetTimeButton.Text = "Reset timer";
             this.resetTimeButton.UseVisualStyleBackColor = true;
@@ -308,9 +311,9 @@
             // button1
             // 
             this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(197, 3);
+            this.button1.Location = new System.Drawing.Point(276, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 21);
+            this.button1.Size = new System.Drawing.Size(85, 21);
             this.button1.TabIndex = 0;
             this.button1.Text = "Unfuck!";
             this.button1.UseVisualStyleBackColor = true;
@@ -319,9 +322,9 @@
             // button2
             // 
             this.button2.Enabled = false;
-            this.button2.Location = new System.Drawing.Point(100, 3);
+            this.button2.Location = new System.Drawing.Point(185, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(91, 21);
+            this.button2.Size = new System.Drawing.Size(85, 21);
             this.button2.TabIndex = 2;
             this.button2.Text = "Easter eggs!";
             this.button2.UseVisualStyleBackColor = true;
@@ -349,6 +352,16 @@
             this.timer1.Enabled = true;
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(94, 3);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(85, 21);
+            this.button7.TabIndex = 3;
+            this.button7.Text = "I give up!";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.Button7_Click);
             // 
             // Form1
             // 
@@ -411,6 +424,7 @@
         public System.Windows.Forms.Label label3;
         public System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button7;
     }
 }
 

@@ -33,6 +33,7 @@ namespace YOUFuck
                 proc.StartInfo.Arguments = "/fuck";
                 proc.StartInfo.Verb = "runas";
                 proc.Start();
+                proc.WaitForExit();
             }
             catch
             {
@@ -76,8 +77,7 @@ namespace YOUFuck
                                         == DialogResult.Yes)
                     {
                         Request();
-                        isTrusted = true;
-                        Environment.Exit(0);
+                        new frmRegFuck().Show();
                     }
                     else
                     {
@@ -199,6 +199,7 @@ namespace YOUFuck
             timer1.Stop();
             resetTimeButton.Enabled = false;
             button2.Enabled = true;
+            button7.Enabled = false;
             MessageBox.Show("Good job! Click on the Unfuck button to exit or discover Easter Eggs in this app!",
 "Good job!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -233,6 +234,45 @@ namespace YOUFuck
             isTrusted = true;
             new frmEaster().Show();
             Close();
+        }
+
+        private void Button7_Click(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            if (MessageBox.Show("Activate REGFuck?" +
+                Environment.NewLine +
+                Environment.NewLine +
+                "This will harm your computer!",
+                "REGFuck or not?",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question)
+                == DialogResult.Yes)
+            {
+                if (MessageBox.Show("REGFuck is malware, running it will harm your computer, are you really sure?" +
+                                    Environment.NewLine +
+                                    Environment.NewLine +
+                                    "THE CREATOR WILL NOT BE RESPONSIBLE FOR ANY DAMAGE CAUSED BY THE PAYLOAD. WE RECOMMEND YOU CLICK NO!",
+                                    "REGFuck or not?",
+                                    MessageBoxButtons.YesNo,
+                                    MessageBoxIcon.Question)
+                                    == DialogResult.Yes)
+                {
+                    Request();
+                    new frmRegFuck().Show();
+                }
+                else
+                {
+                    new FuckingCake().Show();
+                    isTrusted = true;
+                    Close();
+                }
+            }
+            else
+            {
+                new FuckingCake().Show();
+                isTrusted = true;
+                Close();
+            }
         }
     }
 }
