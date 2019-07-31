@@ -5,7 +5,7 @@ When you start the app, the app gives you 5 challenges. You need to answer them.
 ## Destructive level
 It corrupts all of the Windows Registry
 
-# Credits
+## Credits
 1. <a href="https://www.youtube.com/channel/UCWb-66XSFCV5vgKEbl22R6Q">Enderman</a> for the idea (I used his Koteyka joke to build this app, his version and mine looks pretty much the same).
 2. <a href="https://github.com/Leurak">Leurak</a> for the REGFuck payload.
 
