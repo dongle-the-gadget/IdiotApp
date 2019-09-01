@@ -64,11 +64,15 @@ namespace YOUFuck
             e.Cancel = true;
         }
 
-        private async void FrmEaster_Load(object sender, EventArgs e)
+        private void FrmEaster_Load(object sender, EventArgs e)
         {
-            await Task.Delay(10000);
+        }
+
+        private void Panel1_DoubleClick(object sender, EventArgs e)
+        {
             MessageBox.Show("Easter egg 1: Strike 10 times.", "Easter egg is near you!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             button1.Click += Button1_Click;
+            panel1.DoubleClick -= Panel1_DoubleClick;
         }
     }
 }

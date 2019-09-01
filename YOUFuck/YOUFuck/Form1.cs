@@ -122,6 +122,7 @@ namespace YOUFuck
         {
             if(textBox1.Text == correct)
             {
+                button3.Enabled = false;
                 MessageBox.Show("Good job! Move on to Challenge 2!",
                     "Good job!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 await Task.Delay(2000);
@@ -135,6 +136,9 @@ namespace YOUFuck
         {
             if (radioButton1.Checked)
             {
+                radioButton1.Enabled = false;
+                radioButton2.Enabled = false;
+                radioButton3.Enabled = false;
                 MessageBox.Show("Good job! Move on to Challenge 3!",
     "Good job!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 await Task.Delay(2000);
@@ -170,10 +174,12 @@ namespace YOUFuck
             }
             else
             {
+                comboBox1.Enabled = false;
                 groupBox4.BackColor = Color.White;
                 label4.ForeColor = Color.Black ;
                 label4.Text = "Good job!";
                 await Task.Delay(2000);
+                MessageBox.Show("x.y x = u r an idiot; y = \"secret\"", "Good job!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 label5.Visible = button4.Visible = textBox2.Visible = true;
             }
         }
@@ -186,6 +192,7 @@ namespace YOUFuck
         {
             if(textBox2.Text == "youareanidiot.org")
             {
+                button4.Enabled = false;
                 MessageBox.Show("Good job! Move on to the last challenge!",
 "Good job!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 await Task.Delay(2000);

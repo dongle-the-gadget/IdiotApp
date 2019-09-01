@@ -191,6 +191,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(524, 249);
             this.panel1.TabIndex = 4;
+            this.panel1.DoubleClick += new System.EventHandler(this.Panel1_DoubleClick);
             // 
             // frmEaster
             // 
